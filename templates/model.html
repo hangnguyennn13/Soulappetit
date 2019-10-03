@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Hang Detect Facial Expression Website | Model</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="./css/model.css"> -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>The New <span class="highlight">Universe</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class="current"><a href="/model">Predict</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Github Repository</h1>
+        <form action="http://google.com" method="get" target="_blank">
+          <!-- <input type="email" placeholder="Enter Email..."> -->
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        
+        <div class="box1">
+            <h1>Identify Facial Expressions</h1>
+            <p>1. Click on the upload button to upload an image. </p>
+            <p>2. Please enter each person's name from left to right </p> 
+            <p>3. Click on the predict button and please wait a few minute</p>
+            <p>4. The system will automatically tag the given name and predicted emotion on each person's face inside your uploaded image</p>
+            <p>5. If you want to redo the process, please click on the upload button and follow the previous steps</p>
+            <h1 id='result'></h1>
+            
+        </div>
+        <div class="box2">
+          <img src="static/img/hang.jpg" id="output" alt="Load your image here" style ="max-width: 700px; max-height: 700px;" />
+          <form action="" id="form-predict-correction" method="post" enctype="multipart/form-data">
+            <!-- <div class='section-input-firstname hidden'>
+              <label>Enter your first name:</label>  
+              <input type='text' name="firstname" class='input-firstname' required>
+            </div>
+              <br /> -->
+              <input type="file" name="file" id="file" class="inputfile" style="width: 80px; height: 40px;"/>
+              <label for="file">Upload</label>
+              <!-- <input type="submit" class="button is-danger" name = "predict" id="myButton" value ="Predict"> -->
+              <a href="#" id="myButton" class="button is-danger hidden">Predict</a>
+              <!-- <input type="submit" class="button is-danger" name = "save" id="save" value ="Save"> -->
+          </form>
+          <!-- <canvas id="myCanvas" style="display: none"/> -->
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="video hidden">
+      <div id="player" class="hidden" style="margin:30px;"></div>
+      <div  class = "hidden"></div>  
+      <ul id="newsList"></ul>
+    </section>
+
+    
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbZSe6N_BXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <script src="static/jquery-3.4.1.min.js"></script>
+    <script>
+      
+    </script>
+    
+    <script src="static/initYoutube.js"></script>
+    <script src="static/main.js"></script>
+    <footer>
+      <p>Nguyen Thi Diem Hang, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
