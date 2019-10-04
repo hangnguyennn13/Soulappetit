@@ -28,7 +28,8 @@ ul{
 
 .dark{
   padding:15px;
-  background:#35424a;
+  /* background:#35424a; */
+  background: #343148FF;
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
@@ -36,11 +37,13 @@ ul{
 
 /* Header **/
 header{
-  background:#35424a;
+  /* background:#35424a; */
+  background: #343148FF;
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  /* border-bottom:#e8491d 3px solid; */
+  border-bottom:#85B3D1FF 3px solid;
 }
 
 header a{
@@ -83,9 +86,10 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height:400px;
-  background:url('img/showcase.jpg') no-repeat 0 -400px;
+  background:url('img/weekly.jpg') no-repeat 0 -400px;
   text-align:center;
   color:#ffffff;
+  border-bottom: #85B3D1FF 3px solid;
 }
 
 #showcase h1{
@@ -102,7 +106,8 @@ header a:hover{
 #newsletter{
   padding:15px;
   color:#ffffff;
-  background:#35424a
+  background:#343148FF;
+ 
 }
 
 #newsletter h1{
@@ -135,6 +140,7 @@ header a:hover{
 
 #boxes .box img{
   width:150px;
+  height: 200px;
 }
 
 #boxes h1{
@@ -175,8 +181,8 @@ ul#services li{
 #gmail{
   padding:15px;
   color:#ffffff;
-  background:#35424a;
-  border-bottom:#e8491d 10px solid;
+  background:#343148FF;
+  border-bottom:#343148FF 10px solid;
 }
 
 #gmail h1{
@@ -247,7 +253,7 @@ ul#services li{
   width: 80px;
   height: 40px;
 }
-.inputfile + label {
+.inputfile + label, #myButton {
   background-color: #e8491d;
   border: none;
   color: white;
@@ -264,7 +270,7 @@ ul#services li{
 }
 
 .inputfile:focus + label,
-.inputfile + label:hover {
+.inputfile + label:hover, #myButton:hover  {
   opacity: 1;
 }
 .inputfile + label {
@@ -297,7 +303,7 @@ footer{
   padding:20px;
   /* margin-top:20px; */
   color:#ffffff;
-  background-color:#e8491d;
+  background-color:#333D79FF;
   text-align: center;
 }
 
@@ -358,4 +364,14 @@ footer{
   align-items: center;
   background: url('img/weekly.jpg') no-repeat 0;
   /* padding: 30px; */
+}
+.preBtn, .curBtn, .nextBtn {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  color: white;
+  border: 2px solid white; 
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 5px;
+  width: 100px;
 }
